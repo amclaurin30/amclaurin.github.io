@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
-/* code sourced from: */
+/* code sourced from: */ W3schools
 
 * {
     margin: 0;
@@ -14,8 +14,6 @@ body {
     background-color: black;
     color: white;
     font-family: 'Caveat', cursive;
-   
- 
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
@@ -84,40 +82,20 @@ footer {
 h2 footer{
     text-align: center;
 }
-@media (max-width: 768px) {
-    nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
-    main {
-        width: 100%;
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    header {
-        margin-top: 5%;
-    }
-}
-
-   
    .sidebar {
     width: 250px;
     background-color: rgba(234, 11, 133, 0.848);
     padding: 20px;
     border-right: 2px solid rgb(238, 209, 18);
-    height: 100vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .sidebar h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     color: rgb(212, 232, 57);
 }
@@ -130,7 +108,7 @@ h2 footer{
 
 
 .sidebar .gif {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -145,7 +123,7 @@ h2 footer{
 }
 
 .sidebar .logo img {
-    width: 250px;
+    width: 180px;
    image-rendering: crisp-edges;
   
 }
@@ -179,3 +157,52 @@ h2 footer{
     margin-top: 10px;
 }
 
+body  {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    font-family: 'Caveat', cursive;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.loading-page {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.gif-container {
+    position: relative;
+    z-index: 2;
+}
+
+.gif-container img {
+    width: 600px;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px solid rgb(18, 91, 99);
+}
+
+.enter-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #a519a2;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    z-index: 3;
+}
+
+.enter-button:hover {
+    background-color: #d316ad;
+}
